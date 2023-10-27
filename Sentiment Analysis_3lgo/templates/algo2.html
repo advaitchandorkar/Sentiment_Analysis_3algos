@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Restaurant Reviews Results</title>
+</head>
+<body>
+    <h1><center>Sentiment Analysis Results</center></h1>
+    <h2><center>Algorithm used : SVM</center></h2>
+    <h3><p><b><center>Accuracy: {{ accuracy }}</center></b></p></h3>
+    <h3 align="LEFT"><b>MACHINE LEARNING MINI PROJECT</h3>
+    <h3 align="LEFT"><b>Name of group memebers :  </h3>
+    <h3 align ="LEFT"><b>Advait Chandorkar     /   BEB-224</h3>
+    <h3 align ="LEFT"><b>Prince Vishwakarma    /   BEB-246</h3>
+    <h3 align ="LEFT"><b>Shivam Gupta          /   BEB-253</h3>
+    <h2 style="margin-top: -120px;"><center>Classification Report:</center></h2>
+    <h3></h3><pre><center>{{ classification_report }}</center></pre></h3>
+    <h2 style="margin-bottom: -5px;"><center>Sentiment Bar Chart:</center></h2>
+    <center><img src="{{ url_for('static', filename='sentiment_bar2.png') }}" alt="Sentiment Bar Chart"></center>
+</body>
+</html>
